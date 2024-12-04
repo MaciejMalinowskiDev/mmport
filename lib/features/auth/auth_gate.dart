@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mmport/features/home/home_page.dart';
 
 class AuthGate extends StatelessWidget {
-  const AuthGate ({Key? key,}) : super(key: key);
+  const AuthGate ({super.key,});
 
   @override
   Widget build(BuildContext context) {

@@ -7,9 +7,9 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomePage extends StatelessWidget {
   HomePage({
-    Key? key,
+    super.key,
     required this.currentUser,
-  }) :super(key: key);
+  });
 
   final User currentUser;
 

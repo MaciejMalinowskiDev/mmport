@@ -1,16 +1,25 @@
-# Portfolio
+# My Portfolio 
 
-A new Flutter project.
+Welcome to my portfolio! I'm Maciej Malinowski, The Flutter Developer
+Via this app I want to share the most important of my Flutter skills.
+By now it's little empty, but it will grow everyday step, by step.
 
-## Getting Started
+#Done:
+Login/Registration screen 
+Firebase/Auth
+Injectable
+Localizations PL/EN
 
-This project is a starting point for a Flutter application.
+#To implement:
+Splash screen
+Custom Icon
+Dio
+Rest_Api
+Dark theme
+Bottom Navigation Bar
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+#To learn
+Google Maps
+Camera Access
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

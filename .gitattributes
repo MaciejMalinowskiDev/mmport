@@ -1,3 +1,4 @@
+* linguist-vendored
 *.C++ linguist-detectable=false
 *.Cmake linguist-detectable=false
 *.html linguist-detectable=false

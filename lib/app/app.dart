@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         Locale('en',''), // English
         Locale('pl',''), // Polish
       ],
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       home: const AuthGate(),
     );
   }

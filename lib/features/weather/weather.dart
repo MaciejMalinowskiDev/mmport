@@ -33,7 +33,7 @@ class WeatherPage extends StatelessWidget {
             final weatherModel = state.model;
             return Scaffold(
               appBar: AppBar(
-                title: const Text('Temperature'),
+                title: const Text('Weather App'),
               ),
               body: Center(
                 child: Builder(builder: (context) {
@@ -76,6 +76,7 @@ class _DisplayWeatherWidget extends StatelessWidget {
               weatherModel.temperature.toString(),
               style: Theme.of(context).textTheme.displayLarge,
             ),
+            const Text('°C'),
             const SizedBox(height: 60),
             Text(
               weatherModel.city,
@@ -114,6 +115,7 @@ class _SearchWidget extends StatelessWidget {
           ElevatedButton(
             onPressed: () {
               context.read<WeatherCubit>().getWeatherModel(city: _controller.text);
+              const Text('dsd');
             },
             child: const Text('Get'),
           ),

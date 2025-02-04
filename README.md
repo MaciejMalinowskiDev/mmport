@@ -11,8 +11,8 @@ Then you got Info Page with any contact information you would need.
 Also there is little text that uses localization with 2 lauguages polish and english.
 technologies that I used Locatization
 
-Second page at botton navigation bar titeld EventPage is empty. 
-In future there will be event planner.
+Second page at botton navigation bar is EventPage where you can plan any future events. Use Floating Action Bar to set new event, pick date, name it and paste URL link of image you like to add. Now you can tap event to se details, or swipe left to delete it. Every user has their own events.
+technologies that I used InkWell,Intl,Bloc_listener
 
 Third page is Weather Page. Here you can type any city name to see temperature in there, thanks to API services. 
 technologies that I used Dio,Rest_api
@@ -32,11 +32,13 @@ Localizations PL/EN,
 Dio,
 Weather Api,
 Bottom Navigation Bar,
-Splash Screen
+Splash Screen,
+Event planner,
+InkWell,
+Intl
 
 # To implement:
 Adding and deleting data at DatabasePage,
-Event planner,
 Custom Icon,
 Dark theme,
 

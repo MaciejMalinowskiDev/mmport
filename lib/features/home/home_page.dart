@@ -2,8 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:mmport/features/auth/user_profile.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:mmport/features/blank/blank.dart';
+import 'package:mmport/features/database/database.dart';
 import 'package:mmport/features/event/event.dart';
 import 'package:mmport/features/info/info.dart';
 import 'package:mmport/features/weather/weather.dart';
@@ -22,10 +21,10 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   int pageIndex = 0;
   final pages = [
-    InfoPage(),
+    const InfoPage(),
     const EventPage(),
     const WeatherPage(),
-    const BlankPage(),
+     DatabasePage(),
   ];
 
   final usersQuery =
@@ -35,7 +34,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(AppLocalizations.of(context)!.helloWorld),
+        title: const Text('Portfolio Maciej Malinowski'),
         actions: [
           IconButton(
             onPressed: (){
@@ -86,12 +85,12 @@ class _HomePageState extends State<HomePage> {
               },
               icon: pageIndex == 1
                   ? const Icon(
-                      Icons.work_rounded,
+                      Icons.calendar_month,
                       color: Colors.white,
                       size: 35,
                     )
                   : const Icon(
-                      Icons.work_outline_outlined,
+                      Icons.calendar_today_outlined,
                       color: Colors.white,
                       size: 35,
                     ),
@@ -105,12 +104,12 @@ class _HomePageState extends State<HomePage> {
               },
               icon: pageIndex == 2
                   ? const Icon(
-                      Icons.widgets_rounded,
+                      Icons.cloud,
                       color: Colors.white,
                       size: 35,
                     )
                   : const Icon(
-                      Icons.widgets_outlined,
+                      Icons.cloud_outlined,
                       color: Colors.white,
                       size: 35,
                     ),

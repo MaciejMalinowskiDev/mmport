@@ -5,16 +5,13 @@ class EventPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: const Color(0xffC4DFCB),
-      child: Center(
-        child: Text(
-          "Event Page",
-          style: TextStyle(
-            color: Colors.green[900],
-            fontSize: 45,
-            fontWeight: FontWeight.w500,
-          ),
+    return const Center(
+      child: Text(
+        "Event Page",
+        style: TextStyle(
+          color: Color.fromARGB(255, 61, 24, 24),
+          fontSize: 45,
+          fontWeight: FontWeight.w500,
         ),
       ),
     );

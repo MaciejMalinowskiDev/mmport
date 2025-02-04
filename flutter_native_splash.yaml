@@ -8,5 +8,5 @@ flutter_native_splash:
   branding: "assets/name.png"
 
   background_image_dark: "assets/bgdark.png"
-  image_dark: "assets/logodark.png"
-  branding_dark: "assets/namedark.png"
+  image_dark: "assets/logo.png"
+  branding_dark: "assets/name.png"

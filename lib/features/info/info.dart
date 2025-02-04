@@ -1,23 +1,49 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_ui_firestore/firebase_ui_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 
 class InfoPage extends StatelessWidget {
-  InfoPage({super.key});
-  final usersQuery =
-    FirebaseFirestore.instance.collection('users');
+  const InfoPage({super.key});
+ 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:FirestoreListView<Map<String, dynamic>>(
-        query: usersQuery,
-        itemBuilder: (context, snapshot) {
-          Map<String, dynamic> user = snapshot.data();
-          return Text('User name is ${user['displayName']}');
-        },
+      body:Center( 
+        child: Column(
+          mainAxisAlignment:MainAxisAlignment.center ,
+            children: [ 
+              const SizedBox (height:50),
+              Text ( 
+               'Maciej Malinowski',
+                style: GoogleFonts.italiana(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.amber)),
+              Text(
+               'Flutter Developer', 
+               style: GoogleFonts.italiana(
+                  fontSize: 35,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.amber)),
+                  const SizedBox(height: 50,),
+              Text(
+              'maciejdevmalinowski@gmail.com', 
+               style: GoogleFonts.italiana(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.amber)),
+              Text(
+              '883382904', 
+               style: GoogleFonts.italiana(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.amber)),
+                  const SizedBox(height: 150,), 
+              Text(AppLocalizations.of(context)!.helloWorld), 
+            ]
+        ),
       ),
     );
-  }
-}
+  }}

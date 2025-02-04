@@ -10,6 +10,9 @@ class DatabasePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+                title: const Text('Database App'),
+              ),
       body:FirestoreListView<Map<String, dynamic>>(
         query: usersQuery,
         itemBuilder: (context, snapshot) {
